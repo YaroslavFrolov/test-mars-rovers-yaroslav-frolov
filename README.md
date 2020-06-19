@@ -1,4 +1,8 @@
-# React Task ( Mars Rovers ) - Yaroslav Frolov
+# demo https://yaroslavfrolov.github.io/test-mars-rovers-yaroslav-frolov/
+
+## There is my own api-key, because demo-key has few requests (see .env)
+
+## React Task ( Mars Rovers ) - Yaroslav Frolov
 Create a react app that utilizes NASA's API to display photos taken by their
 various rovers on Mars.
 Go to https://api.nasa.gov/ and scroll down to "Mars Rover Photos" API
