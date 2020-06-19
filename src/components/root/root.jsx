@@ -7,7 +7,7 @@ import { Layout } from 'components/layout';
 configure({ enforceActions: 'observed' });
 
 export const Root = () =>
-  <Router>
+  <Router basename='/'>
     <StoresProvider>
       <Layout />
     </StoresProvider>
