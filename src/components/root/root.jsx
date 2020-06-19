@@ -7,7 +7,7 @@ import { Layout } from 'components/layout';
 configure({ enforceActions: 'observed' });
 
 export const Root = () =>
-  <Router basename='/'>
+  <Router basename='/test-mars-rovers-yaroslav-frolov'>
     <StoresProvider>
       <Layout />
     </StoresProvider>

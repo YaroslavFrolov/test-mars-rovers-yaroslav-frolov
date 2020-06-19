@@ -21,8 +21,7 @@ export const RoverPage = observer(props => {
   const { match } = props;
   const name = match.params.roverName;
   const roverData = rovers.find(item => item.name.toLowerCase() === name);
-  console.log(roverData, name);
-  const { max_sol, total_photos, name: realName } = roverData || {};
+  const { max_sol, total_photos, name: realName } = roverData;
 
   return (
     <React.Fragment>
