@@ -1,0 +1,52 @@
+@import 'common-styles/_vars.scss';
+
+.wrapper {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  'header'
+  'main'
+  'footer';
+}
+
+.header {
+  grid-area: header;
+  background-color: $mainBlack;
+  padding: 10px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+
+  a {
+    color: white;
+  }
+}
+
+.main {
+  grid-area: main;
+  padding: 10px;
+  background-image: url('./bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: $mainBlack;
+  color: white;
+  padding: 10px;
+
+  a {
+    color: inherit;
+  }
+
+  p {
+    line-height: 1.4;
+  }
+}

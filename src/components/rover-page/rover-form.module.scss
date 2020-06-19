@@ -1,0 +1,56 @@
+@import 'common-styles/_vars.scss';
+
+.wrapper {
+  margin-top: 1em;
+
+  form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: top;
+  }
+
+  button {
+    margin: 22px auto 0 auto;
+  }
+}
+
+.field {
+  margin: .5em auto;
+
+  span {
+    displaY: block;
+    min-width: 100px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  input, select {
+    display: block;
+    width: 205px;
+    height: 38px;
+  }
+}
+
+.error {
+  color: $mainRed;
+  font-size: 14px;
+  font-weight: bold;
+  animation: shake .3s;
+  margin-top: .2em;
+}
+
+
+@keyframes shake {
+  from, to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    transform: translate3d(10px, 0, 0);
+  }
+}

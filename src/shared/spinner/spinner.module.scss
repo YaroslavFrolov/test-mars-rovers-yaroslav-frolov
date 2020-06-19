@@ -1,0 +1,55 @@
+@import 'common-styles/_vars.scss';
+
+.wrapper {
+  margin: 50px 0;
+  text-align: center;
+
+  & > span {
+    color: white;
+    text-shadow: 1px 1px 2px $mainBlack;
+  }
+}
+
+.spinner {
+  margin: 20px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  animation: rotate 2.0s infinite linear;
+}
+
+.dot1,
+.dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  border-radius: 100%;
+  animation: bounce 2.0s infinite ease-in-out;
+}
+
+.dot1{ background-color: $mainRed; }
+.dot2 {
+  background-color: #0054cc;
+  top: auto;
+  bottom: 0px;
+  animation-delay: -1.0s;
+}
+
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(0.0);
+  }
+
+  50% {
+    transform: scale(1.0);
+  }
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
