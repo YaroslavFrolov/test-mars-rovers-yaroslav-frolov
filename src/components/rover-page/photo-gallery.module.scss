@@ -7,7 +7,7 @@
 }
 
 .imgWrapper {
-  min-height: 600px;
+  min-height: 40vh;
   position: relative;
 
   & > span {
@@ -22,7 +22,7 @@
   & > img {
     display: block;
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 500px;
     width: 100%;
     position: relative;
     z-index: 2;
