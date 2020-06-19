@@ -2,6 +2,8 @@
 
 ## There is my own api-key, because demo-key has few requests (see .env)
 
+## To see any photo, please select sol = 50 and camera = FHAZ
+
 ## React Task ( Mars Rovers ) - Yaroslav Frolov
 Create a react app that utilizes NASA's API to display photos taken by their
 various rovers on Mars.
